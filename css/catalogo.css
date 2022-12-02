@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.body_filmes {
+    background-image: url(https://one-cinema.s3.sa-east-1.amazonaws.com/filmes/escape-room/10062020/3840/background-escape-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100;
+}
+
+.body_series {
+    background-image: url(https://br.sonychannel.com/sites/br.set/files/widget_image_f_image/gabr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100;
+}
+
+.body_documentarios {
+    background-image: url(https://i.ytimg.com/vi/7X54fS0SQyw/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-family: "Oswald", sans-serif;
+    font-size: 52px;
+    color: #ffffff;
+    text-shadow: 0.2em 0.1em 0.8em black;
+    padding-right: 10%;
+    margin-left: 5em;
+}
+
+
+span.botao-menu, span.perfil { 
+    font-family: 'Material Icons';
+    margin-left: .6em;
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(18, 18, 71);
+    user-select: none;
+    
+}
+
+.perfil:hover, .botao-menu:hover {
+    text-shadow: 1px 1px 1px rgb(96, 102, 153);
+}
+
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(18, 18, 71, 0.97);
+    margin-left: 2em;
+    width: 15%;
+    height: 30%;
+    box-shadow: 6px 6px 2px rgb(96, 102, 153);
+    border-radius: 7px;
+    margin-top: -10em;
+    position: absolute;
+    left: -100vw;
+    
+}
+
+.navegacao--ativo {
+    left: 0;
+}
+
+.navegacao a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.navegacao a:hover{
+    color: rgb(96, 102, 153);
+    border: 2px solid rgb(96, 102, 153);
+    padding: 15px 15px;
+    border-radius: 7px;
+    margin: 0;
+}
+
+a.links {
+    margin-left: 1.5rem;
+}
+
+
+.menu-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgb(18, 18, 71, 0.97);
+    margin-right: 2em;
+    width: 15%;
+    height: 30%;
+    box-shadow: -6px 6px 2px rgb(96, 102, 153);
+    border-radius: 7px;
+    margin-top: -10em;
+    position: absolute;
+    left: -100vw;
+    padding: 2em;
+}
+
+.menu-perfil p {
+    align-self: center;
+    color: rgb(96, 102, 153);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.menu-perfil span a {
+    margin-left: 1em;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.material-icons {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.menu-perfil a:hover {
+    color: rgb(96, 102, 153);
+}
+
+.perfil--ativo {
+    left: auto;
+    right: .6em;
+}
+
+
+.final {
+    align-self: center;
+    margin-right: 30px;
+}
+
+.titulo_fsd h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px #757575;
+}
+
+.titulo_fsd span {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+.titulo_fsd {
+    margin-top: 10em;
+    margin-left: 2em;
+}
+
+.sobre-fsd {
+    font-family: "Overpass", sans-serif;
+    color: white;
+    width: 25%;
+    margin: 0.7em 2em;
+}
+
+.avaliacao {
+    margin-left: 2em;
+    margin-top: 1em;
+    width: 9rem;
+    height: 5vh;
+}
+
+.assistir{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(18, 18, 71);
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.trailer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(18, 18, 71);
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 1em;
+    cursor: pointer;
+    color: white;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 2em;
+}
+
+.play {
+    width: 20px;
+
+}
+
+.trailer:hover, .assistir:hover {
+    background: rgb(96, 102, 153);
+}
+
+.recomendacao {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 1.8em;
+    margin-left: 0.5em;
+}
+
+.navegacao_fsd{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    padding: 5px 2.5px 5px 2.5px;
+    background-color: rgba(245, 245, 245, 0.252);
+    overflow: hidden;
+}
+
+.navegacao_fsd img{
+    width: 100%;
+    height: 25vh;
+    padding: 5px 2.5px 5px 2.5px;
+}
+
+.navegacao_fsd img:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
