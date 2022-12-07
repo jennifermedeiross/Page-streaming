@@ -1,4 +1,6 @@
+/* HOME */
 * {
+    user-select: none;
     box-sizing: border-box;
 }
 
@@ -13,12 +15,12 @@ body {
 
 main {
     background: rgb(21,13,69);
-    background: linear-gradient(170deg, rgba(21,13,69,0.6) 66%, rgba(0,0,0) 85%);
+    background: linear-gradient(170deg, rgba(21,13,69,0.8) 66%, rgba(0,0,0) 85%);
     height: 100vh;
 }
 
 .header {
-    background: rgb(21,13,69, 0.6);
+    background: rgb(21,13,69, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,20 +31,6 @@ main {
     width: 70px;
     height: 70px;
 }
-
-.logo h1 {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
-
-.logo {
-    margin-left: -2.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-
 
 .navegacao {
     font-family: 'Poppins', sans-serif;
@@ -97,16 +85,27 @@ main {
 
 .container .texto h2 {
     color: azure;
-    font-size: 4em;
-    margin-bottom: 10px;
-    line-height: 1.8em;
+    font-size: 12em;
     font-weight: 700;
-}
-
-.container .texto h2 span {
-    font-size: 3em;
     color: white;
     text-shadow: 6px 6px 10px black;
+}
+
+h2::after {
+    content: '|';
+    margin-left:  10px;
+    opacity: 1;
+    animation: efeitodig .7s infinite;
+    font-size: .75em;
+}
+
+@keyframes efeitodig {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 .container .texto p {
@@ -114,67 +113,11 @@ main {
     font-family: 'Oswald', sans-serif;
     font-size: 35px;
     text-align: justify;
-    text-shadow: 2px 3px 8px black;
 }
 
-/* SOBRE */
+/* ALTERNATIVO */
 
-.body-sobre {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: black;
-}
-
-.main-sobre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background: rgb(21,13,69);
-    background: linear-gradient(170deg, rgba(21,13,69,1) 66%, rgba(0,0,0,0.8281687675070029) 85%);
-}
-
-.logo-apres {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -7em;
-}
-
-.logo-img {
-    width: 250px;
-    height: 250px;
-}
-
-.logo-titulo {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 100px;
-    cursor: pointer;
-}
-
-.constru {
-    margin-top: 200px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(96, 102, 153);
-    font-size: 40px;
-    opacity: 0.4;
-    transition: all 1s;
-}
-
-.constru:hover {
-    transition: all 1s;
-    opacity: 1;
-    color: white;
-}
-
-/* CONTATO */
-
-.main-contato {
+.main-alternativo {
     background: rgb(21,13,69);
     background: linear-gradient(170deg, rgba(21,13,69,1) 66%, rgba(0,0,0) 85%);
     opacity: 0.9;
@@ -183,6 +126,92 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
+.logo h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    margin-left: -2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+/* SOBRE */
+
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -5em;
+}
+
+.texto-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.texto-sobre h2{
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 .5em 0;
+}
+
+.texto-sobre h3 {
+    font-size: px;
+    color: rgb(96, 102, 153);
+    font-family: 'Poppins', sans-serif;
+}
+
+.avatar {
+    width: 27em;
+    transition: all .6s;
+}
+
+.avatar:hover {
+    transition: all .5s;
+    scale: 1.1;
+}
+
+.pessoal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pessoal .profissao {
+    font-size: 30px;
+    color: rgb(96, 102, 153);
+    padding: 0.3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pessoal .nome{
+    font-size: 40px;
+    color: rgb(251, 251, 253);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-sobre {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1em;;
+    border-radius: 7px;
+    background: rgb(96, 102, 153);
+    color: #fff;
+    width: 8em;
+    height: 4vh;
+}
+
+
+
+/* CONTATO*/
 
 .titulo-contato {
     text-align: center;

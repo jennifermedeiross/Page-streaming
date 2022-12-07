@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFlix | Documentários</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Overpass:wght@500;700&family=Poppins:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
 </head>
@@ -22,9 +22,7 @@
         <section class="header">
             <span class="botao-menu">apps</span>
             <h1 class="titulo">DevFlix</h1>
-            <div class="final">
-                <button><span class="material-icons perfil">account_circle</span></button>
-            </div>
+            <button><span class="material-icons botao-perfil">account_circle</span></button>
         </section>
     </header>
     <main>
@@ -33,16 +31,16 @@
             <a href="series.html" class="links">Séries</a>
             <a href="documentarios.html" class="links">Documentários</a>
         </nav>
-        <nav class="menu-perfil">
-            <p>Bem vindo, Fulano!</p>
+        <nav class="perfil">
+            <p>Bem vind@, Fulan@!</p>
             <span class="material-icons">person<a>Sua conta</a></span>
             <span class="material-icons">feed<a>Novidades</a></span>
             <span class="material-icons">settings<a>Configurações</a></span>
             <span class="material-icons">logout<a href="index.html">Sair</a></span>
         </nav>
-        <section class="conteiner">
+        <section>
             <div class="titulo_fsd">
-                <h2>O dilema<br><span>das redes</span></h2>
+                <h2>Lorem<br><span>ipsum dolor</span></h2>
             </div>
 
             <div class="sobre-fsd">
@@ -53,25 +51,30 @@
                 <img src="assets/icon/avaliacao-4.png" alt="Avaliações">
             </div>
 
-            <div class="botoes">
-                <a href="#"><button class="assistir"><img src="assets/icon/play-icone.png" class="play">Assistir agora</button></a>
-                <a href="#"></a><button class="trailer"><img src="assets/icon/play-icone.png" class="play">Trailer</button></a>
+            <<div class="botoes">
+                <a href="reproducao.html"><button class="assistir"><img src="assets/icon/play-icone.png" class="play">Assistir agora</button></a>
+                <a href="reproducao.html"><button class="trailer"><img src="assets/icon/play-icone.png" class="play">Trailer</button></a>
             </div>
 
             <p class="recomendacao">Recomendação:</p>
 
-            <div class="carrosel">
+            <section>
                 <div class="navegacao_fsd">
-                    <a href="#"><img src="https://i.ytimg.com/vi/7X54fS0SQyw/maxresdefault.jpg" alt="O dilema das redes" class="dilemaredes"></a>
-                    <a href="#"><img src="https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/01/democracia-vertigem-capa.jpg" alt="Democracia em vertigem" class="democracia"></a>
-                    <a href="#"><img src="https://cdn-images.rtp.pt/EPG/imagens/33600_59650_28127.png?amp;w=160" alt="Altitude" class="altitude"></a>
-                    <a href="#"> <img src="http://s2.glbimg.com/ihq13PuaFaxqKSb5oBMxjFUplBE=/smart/e.glbimg.com/og/ed/f/original/2017/11/01/food-inc.jpg" alt="Food" class="food"></a>
-                    <a href="#"><img src="https://blog.futfanatics.com.br/wp-content/uploads/2021/04/capa-10.jpg" alt="The two escobars" class="thetwoescobars"></a>
+
+                    <a><img src="https://i.ytimg.com/vi/7X54fS0SQyw/maxresdefault.jpg" alt="O dilema das redes" class="recomend_midia_documentarios" onclick="trocaFundo('documentarios', 0)"></a>
+
+                    <a><img src="https://pt.org.br/wp-content/uploads/2020/01/democracia-em-vertigem-3.png" alt="Democracia em vertigem" class="recomend_midia_documentarios" onclick="trocaFundo('documentarios', 1)"></a>
+
+                    <a><img src="https://tm.ibxk.com.br/2022/02/07/07145456606289.jpg?ims=1200x675" alt="Nosso planeta" class="recomend_midia_documentarios" onclick="trocaFundo('documentarios', 2)"></a>
+
+                    <a> <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt01b1c81c83ce627a/61b8b444a171b160a14466fe/Nouveau_projet.png" alt="Neymar: o caos perfeito" class="recomend_midia_documentarios" onclick="trocaFundo('documentarios', 3)"></a>
+
+                    <a><img src="https://artwork.espncdn.com/films/6d2f1740-12ce-4378-b024-07fc214fa311/16x9/1280x720_201908011928.jpg" alt="The two escobars" class="recomend_midia_documentarios" onclick="trocaFundo('documentarios', 4)"></a>
                 </div>
-            </div>
+            </section>
 
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="js/catalogo.js"></script>
 </body>
 </html>

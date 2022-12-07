@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFlix | Séries</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -13,8 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Overpass:wght@500;700&family=Poppins:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
 </head>
 <body class="body_series">
@@ -22,9 +22,7 @@
         <section class="header">
             <span class="botao-menu">apps</span>
             <h1 class="titulo">DevFlix</h1>
-            <div class="final">
-                <button><span class="material-icons perfil">account_circle</span></button>
-            </div>
+            <button><span class="material-icons botao-perfil">account_circle</span></button>
         </section>
     </header>
     <main>
@@ -33,16 +31,16 @@
             <a href="series.html" class="links">Séries</a>
             <a href="documentarios.html" class="links">Documentários</a>
         </nav>
-        <nav class="menu-perfil">
-            <p>Bem vindo, Fulano!</p>
+        <nav class="perfil">
+            <p>Bem vind@, Fulan@!</p>
             <span class="material-icons">person<a>Sua conta</a></span>
             <span class="material-icons">feed<a>Novidades</a></span>
             <span class="material-icons">settings<a>Configurações</a></span>
             <span class="material-icons">logout<a href="index.html">Sair</a></span>
         </nav>
-        <section class="conteiner">
+        <section>
             <div class="titulo_fsd">
-                <h2>Grey's <br><span>Anatomy</span></h2>
+                <h2>Lorem<br><span>ipsum dolor</span></h2>
             </div>
 
             <div class="sobre-fsd">
@@ -54,24 +52,29 @@
             </div>
 
             <div class="botoes">
-                <a href="#"><button class="assistir"><img src="assets/icon/play-icone.png" class="play">Assistir agora</button></a>
-                <a href="#"></a><button class="trailer"><img src="assets/icon/play-icone.png" class="play">Trailer</button></a>
+                <a href="reproducao.html"><button class="assistir"><img src="assets/icon/play-icone.png" class="play">Assistir agora</button></a>
+                <a href="reproducao.html"><button class="trailer"><img src="assets/icon/play-icone.png" class="play">Trailer</button></a>
             </div>
 
             <p class="recomendacao">Recomendação:</p>
 
-            <div class="carrosel">
+            <section>
                 <div class="navegacao_fsd">
-                    <a href="#"><img src="https://br.sonychannel.com/sites/br.set/files/widget_image_f_image/gabr.png" alt="Grey's Anatomy" class="greysanatomy"></a>
-                    <a href="#"><img src="https://hbomax-images.warnermediacdn.com/images/GYC_OsgovbZbDwwEAAAAD/tileburnedin?size=1280x720&partner=hbomaxcom&v=a7760d6d0bc1adc394cbd48bac212c74&host=art-gallery.api.hbo.com&language=pt-br&w=1280" alt="Superntaural" class="supernatural"></a>
-                    <a href="#"><img src="https://i2.wp.com/allzone.com.br/wp-content/uploads/2022/10/Design-sem-nome-96.png" alt="The walking dead" class="twd"></a>
-                    <a href="#"> <img src="https://files.tecnoblog.net/wp-content/uploads/2022/06/breaking-bad.jpg" alt="Breaking bad" class="breakingbad"></a>
-                    <a href="#"><img src="https://observatoriodoaudiovisual.com.br/wp-content/uploads/2020/07/flash-740x417.jpg" alt="Flash" class="flash"></a>
+
+                    <a><img src="https://images5.alphacoders.com/638/638567.jpg" alt="Superntaural" class="recomend_midia_series" onclick="trocaFundo('series', 0)"></a>
+
+                    <a><img src="https://br.sonychannel.com/sites/br.set/files/widget_image_f_image/gabr.png" alt="Grey's Anatomy" class="recomend_midia_series" onclick="trocaFundo('series', 1)"></a>
+                    
+                    <a><img src="https://wallpaper.dog/large/20508359.jpg" alt="The walking dead" class="recomend_midia_series" onclick="trocaFundo('series', 2)"></a>
+
+                    <a> <img src="https://i.pinimg.com/originals/27/7e/b1/277eb1d795931a400e9f31956d3d788b.jpg" alt="GameOfThrones" class="recomend_midia_series" onclick="trocaFundo('series', 3)"></a>
+                    
+                    <a><img src="https://rare-gallery.com/mocahbig/84206-flash-superheroes-hd-4k-artist-artwork-digital.jpg" alt="Flash" class="recomend_midia_series" onclick="trocaFundo('series', 4)"></a>
                 </div>
-            </div>
+            </section>
 
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="js/catalogo.js"></script>
 </body>
 </html>

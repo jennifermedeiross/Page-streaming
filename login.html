@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFlix | Entrar</title>
-    <link rel="stylesheet" href="css/acess.css">
+    <link rel="stylesheet" href="css/acesso.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
@@ -19,8 +19,8 @@
         <div class="login">
             <h2>Acesso</h2>
             <div class="auto-login">
-                <a><img src="https://img.icons8.com/color/48/null/google-logo.png" alt="Google"></a>
-                <a><img src="https://img.icons8.com/fluency/48/null/facebook-new.png" alt="Facebook" class="facebook"></a>
+                <a id="auto" onclick="abrirAba(0)"><img src="https://img.icons8.com/color/48/null/google-logo.png" alt="Google"></a>
+                <a id="auto" onclick="abrirAba(1)"><img src="https://img.icons8.com/fluency/48/null/facebook-new.png" alt="Facebook" class="facebook"></a>
             </div>
             <p>OR</p>
             <form>
@@ -34,17 +34,18 @@
                     <label for="pass">Senha</label>
                 </div>
 
-                <a href="#" class="recover">Esqueceu a senha?</a>
+                <a class="recover">Esqueceu a senha?</a>
                 
-                <a href="filmes.html" class="btn">
+                <button type="submit"><a href="filmes.html" class="btn">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     Entrar
-                </a>
-            </form>                      
+                </a></button>
+            </form> 
         </div>
     </div>
+    <script src="js/acesso.js"></script>
 </body>
 </html>

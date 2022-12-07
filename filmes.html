@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFlix | Filmes</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Overpass:wght@500;700&family=Poppins:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
 </head>
@@ -22,9 +22,7 @@
         <section class="header">
             <span class="botao-menu">apps</span>
             <h1 class="titulo">DevFlix</h1>
-            <div class="final">
-                <button><span class="material-icons perfil">account_circle</span></button>
-            </div>
+            <button><span class="material-icons botao-perfil">account_circle</span></button>
         </section>
     </header>
     <main>
@@ -33,16 +31,16 @@
             <a href="series.html" class="links">Séries</a>
             <a href="documentarios.html" class="links">Documentários</a>
         </nav>
-        <nav class="menu-perfil">
-            <p>Bem vindo, Fulano!</p>
+        <nav class="perfil">
+            <p>Bem vind@, Fulan@!</p>
             <span class="material-icons">person<a>Sua conta</a></span>
             <span class="material-icons">feed<a>Novidades</a></span>
             <span class="material-icons">settings<a>Configurações</a></span>
             <span class="material-icons">logout<a href="index.html">Sair</a></span>
         </nav>
-        <section class="conteiner">
+        <section>
             <div class="titulo_fsd">
-                <h2>Escape<br><span>Room 2</span></h2>
+                <h2>Lorem<br><span>Ipsum dolor</span></h2>
             </div>
 
             <div class="sobre-fsd">
@@ -54,23 +52,28 @@
             </div>
 
             <div class="botoes">
-                <a href="#"><button class="assistir"><img src="assets/icon/play-icone.png" class="play">Assistir agora</button></a>
-                <a href="#"></a><button class="trailer"><img src="assets/icon/play-icone.png" class="play">Trailer</button></a>
+                <a href="reproducao.html"><button class="assistir"><img src="assets/icon/play-icone.png" class="play">Assistir agora</button></a>
+                <a href="reproducao.html"><button class="trailer"><img src="assets/icon/play-icone.png" class="play">Trailer</button></a>
             </div>
 
             <p class="recomendacao">Recomendação:</p>
 
-            <div class="carrosel">
+            <section>
                 <div class="navegacao_fsd">
-                    <a><img src="https://one-cinema.s3.sa-east-1.amazonaws.com/filmes/escape-room/10062020/3840/background-escape-room.jpg" alt="Escape room" class="escaperoom"></a>
-                    <a><img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/330/imagem-pre-venda-ingressos-sessao-especial-3d-harry-potter-e-a-pedra-filosofal-20-anos.jpg" height="232.75" width="286.56" alt="Harry Potter" class="harrypotter"></a>
-                    <a><img src="https://temalguemassistindo.com.br/wp-content/uploads/2019/06/Jogos-Vorazes.jpg" alt="Jogos vorazes" class="jogosvorazes"></a>
-                    <a><img src="https://www.nawpic.com/media/2020/star-wars-nawpic-23.jpg" alt="Starwars" class="starwars"></a>
-                    <a><img src="http://cabanadoleitor.com.br/wp-content/uploads/2021/10/Perdidos_No_Espaco_Serie_Netflix_CDL_1920x1080_01.jpg" alt="Perdidos no espaço" class="perdidosnoespaco"></a>
+
+                    <a><img src="https://one-cinema.s3.sa-east-1.amazonaws.com/filmes/escape-room/10062020/3840/background-escape-room.jpg" alt="Escape room" class="recomend_midia_filmes" onclick="trocaFundo('filmes', 0)"></a>
+
+                    <a><img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/330/imagem-pre-venda-ingressos-sessao-especial-3d-harry-potter-e-a-pedra-filosofal-20-anos.jpg" alt="Harry Potter" class="recomend_midia_filmes" onclick="trocaFundo('filmes', 1)"></a>
+
+                    <a><img src="https://temalguemassistindo.com.br/wp-content/uploads/2019/06/Jogos-Vorazes.jpg" alt="Jogos vorazes" class="recomend_midia_filmes" onclick="trocaFundo('filmes', 2)"></a>
+
+                    <a><img src="https://www.nawpic.com/media/2020/star-wars-nawpic-23.jpg" alt="Starwars" class="recomend_midia_filmes" onclick="trocaFundo('filmes', 3)"></a>
+                    
+                    <a><img src="http://cabanadoleitor.com.br/wp-content/uploads/2021/10/Perdidos_No_Espaco_Serie_Netflix_CDL_1920x1080_01.jpg" alt="Perdidos no espaço" class="recomend_midia_filmes" onclick="trocaFundo('filmes', 4)"></a>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="js/catalogo.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 * {
+    user-select: none;
     box-sizing: border-box;
 }
-
 
 .body_filmes {
     background-image: url(https://one-cinema.s3.sa-east-1.amazonaws.com/filmes/escape-room/10062020/3840/background-escape-room.jpg);
@@ -12,7 +12,7 @@
 }
 
 .body_series {
-    background-image: url(https://br.sonychannel.com/sites/br.set/files/widget_image_f_image/gabr.png);
+    background-image: url(https://images5.alphacoders.com/638/638567.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -43,17 +43,19 @@
 }
 
 
-span.botao-menu, span.perfil { 
+span.botao-menu, span.botao-perfil { 
     font-family: 'Material Icons';
     margin-left: .6em;
     cursor: pointer;
     font-size: 50px;
     color: rgb(18, 18, 71);
-    user-select: none;
-    
 }
 
-.perfil:hover, .botao-menu:hover {
+.botao-perfil {
+    margin-right: 0.6em;
+}
+
+.botao-perfil:hover, .botao-menu:hover {
     text-shadow: 1px 1px 1px rgb(96, 102, 153);
 }
 
@@ -99,7 +101,7 @@ a.links {
 }
 
 
-.menu-perfil {
+.perfil {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -116,13 +118,14 @@ a.links {
     padding: 2em;
 }
 
-.menu-perfil p {
+.perfil p {
     align-self: center;
     color: rgb(96, 102, 153);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
-.menu-perfil span a {
+
+.perfil span a {
     margin-left: 1em;
     cursor: pointer;
     color: white;
@@ -130,12 +133,7 @@ a.links {
     font-size: 16px;
 }
 
-.material-icons {
-    color: #ffffff;
-    font-size: 14px;
-}
-
-.menu-perfil a:hover {
+.perfil a:hover {
     color: rgb(96, 102, 153);
 }
 
@@ -144,10 +142,9 @@ a.links {
     right: .6em;
 }
 
-
-.final {
-    align-self: center;
-    margin-right: 30px;
+.material-icons {
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .titulo_fsd h2{
