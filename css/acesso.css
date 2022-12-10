@@ -117,6 +117,7 @@ body {
     font-family: 'Oswald', sans-serif;
     color: rgb(96, 102, 153);
     float: right;
+    cursor: pointer;
 }
 
 .termos {

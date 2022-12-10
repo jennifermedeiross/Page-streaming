@@ -19,6 +19,7 @@ main {
 .logo h1 {
     color: white;
     font-family: 'Oswald', sans-serif;
+    font-size: 52px;
 }
 
 .logo {
@@ -39,7 +40,7 @@ main {
     width: 80%;
     height: 85%;
     margin: 0 auto;
-    box-shadow: 10px 10px 30px black;
-    border: 10px solid rgba(21,13,69,0.8);
+    box-shadow: -20px -10px 50px rgb(38, 27, 96);
+    border: 10px solid rgba(21,13,69,0.2);
     border-radius: 20px;
 }

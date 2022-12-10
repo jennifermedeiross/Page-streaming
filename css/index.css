@@ -137,7 +137,7 @@ h2::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 52px;
 }
 
 /* SOBRE */
@@ -157,7 +157,7 @@ h2::after {
 }
 
 .texto-sobre h2{
-    font-size: 80px;
+    font-size: 4em;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     margin: 0 0 .5em 0;
