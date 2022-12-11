@@ -130,9 +130,10 @@ body {
 }
 
 .termos a {
+    font-size: 14px;
     margin-left: 5px;
     text-decoration: underline;
-    color: darkblue;
+    color: rgb(96, 102, 153);
 }
 
 .btn {
