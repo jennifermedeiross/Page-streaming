@@ -1,28 +1,24 @@
-const docQS = function (classe) {
-    return document.querySelector(classe)}
-
 // MENU
 
-const [botaoMenu,transformeMenu] = [docQS('.botao-menu'), docQS('.navegacao')] // MENU LATEAL ESQUERDO
+const [botao, ativar] = [document.querySelectorAll('.botao'),
+                        document.querySelectorAll('#ativar')]
 
-const [menuPerfil, transformePerfil] = [docQS('.botao-perfil'), docQS('.perfil')] // MENU LATEAL DIREITO
+console.log(botao)
+botao.forEach((element, index) => {
 
-const descricaoTipo = ['navegacao', 'perfil']
+    const tipoBotao = ativar[index].className
+    const classe = document.querySelector(`.${tipoBotao}`)
 
-
-function menuLateral (botao, transforme, tipo) {
-    botao.addEventListener('click', () => {
-        transforme.classList.toggle(`${tipo}--ativo`)
-})}
-
-menuLateral(botaoMenu, transformeMenu, descricaoTipo[0])
-menuLateral(menuPerfil, transformePerfil, descricaoTipo[1])
+    element.addEventListener('click', () => {
+        classe.classList.toggle(`${tipoBotao}--ativo`)
+})})
 
 // TROCAR IMAGEM DE FUNDO
 
-function trocaFundo (pagina,midia) {
-    const recomend = document.querySelectorAll(`.recomend_midia_${pagina}`)
-    const img = recomend[midia].src
-    const body = `body_${pagina}`
+const catalogo = document.querySelector('.navegacao_fsd')
+
+catalogo.addEventListener('click', (evento) => {
+    const img = evento.target.currentSrc
     document.body.style.backgroundImage="url" + `(${img})`
-}
+    
+})

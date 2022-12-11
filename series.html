@@ -20,24 +20,26 @@
 <body class="body_series">
     <header>
         <section class="header">
-            <span class="botao-menu">apps</span>
+            <span class="botao-menu botao">apps</span>
             <h1 class="titulo">DevFlix</h1>
-            <button><span class="material-icons botao-perfil">account_circle</span></button>
+            <button><span class="material-icons botao-perfil botao">account_circle</span></button>
         </section>
     </header>
     <main>
-        <nav class="navegacao">
-            <a href="filmes.html" class="links">Filmes</a>
-            <a href="series.html" class="links">Séries</a>
-            <a href="documentarios.html" class="links">Documentários</a>
-        </nav>
-        <nav class="perfil">
-            <p>Bem vindo de volta!</p>
-            <span class="material-icons">person<a>Sua conta</a></span>
-            <span class="material-icons">feed<a>Novidades</a></span>
-            <span class="material-icons">settings<a>Configurações</a></span>
-            <span class="material-icons">logout<a href="index.html">Sair</a></span>
-        </nav>
+        <section>
+            <nav class="navegacao" id="ativar">
+                <a href="filmes.html" class="links">Filmes</a>
+                <a href="series.html" class="links">Séries</a>
+                <a href="documentarios.html" class="links">Documentários</a>
+            </nav>
+            <nav class="perfil" id="ativar">
+                <p>Bem-vindo de volta!</p>
+                <button><span class="material-icons">person<a>Sua conta</a></span></button>
+                <button><span class="material-icons">feed<a>Novidades</a></span></button>
+                <button><span class="material-icons">settings<a>Configurações</a></span></button>
+                <button><span class="material-icons">logout<a href="index.html">Sair</a></span></button>
+            </nav>
+        </section>
         <section>
             <div class="titulo_fsd">
                 <h2>Lorem<br><span>ipsum dolor</span></h2>
@@ -61,15 +63,15 @@
             <section>
                 <div class="navegacao_fsd">
 
-                    <img src="https://images5.alphacoders.com/638/638567.jpg" alt="Superntaural" class="recomend_midia_series" onclick="trocaFundo('series', 0)">
+                    <img src="https://images5.alphacoders.com/638/638567.jpg" alt="Superntaural">
 
-                    <img src="https://br.sonychannel.com/sites/br.set/files/widget_image_f_image/gabr.png" alt="Grey's Anatomy" class="recomend_midia_series" onclick="trocaFundo('series', 1)">
+                    <img src="https://br.sonychannel.com/sites/br.set/files/widget_image_f_image/gabr.png" alt="Grey's Anatomy">
                     
-                    <img src="https://wallpaper.dog/large/20508359.jpg" alt="The walking dead" class="recomend_midia_series" onclick="trocaFundo('series', 2)">
+                    <img src="https://wallpaper.dog/large/20508359.jpg" alt="The walking dead" >
 
-                     <img src="https://i.pinimg.com/originals/27/7e/b1/277eb1d795931a400e9f31956d3d788b.jpg" alt="GameOfThrones" class="recomend_midia_series" onclick="trocaFundo('series', 3)">
+                    <img src="https://i.pinimg.com/originals/27/7e/b1/277eb1d795931a400e9f31956d3d788b.jpg" >
                     
-                    <img src="https://rare-gallery.com/mocahbig/84206-flash-superheroes-hd-4k-artist-artwork-digital.jpg" alt="Flash" class="recomend_midia_series" onclick="trocaFundo('series', 4)">
+                    <img src="https://rare-gallery.com/mocahbig/84206-flash-superheroes-hd-4k-artist-artwork-digital.jpg" alt="Flash" >
                 </div>
             </section>
 
