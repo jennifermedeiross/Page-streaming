@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("fundo-index.png");
+    background-image: url("../assets/img/fundo-index.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

@@ -45,8 +45,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 30vw;
-    height: 80vh;
+    width: 550px;
+    height: 80%;
     box-shadow: 0px 10px 40px black;
     border-radius: 20px;
     padding: 40px;
@@ -74,11 +74,11 @@ body {
     color: rgb(96, 102, 153);
 }
 
-.login .box-user {
+.login .box-user, .box-user-cadastro {
     position: relative;
 }
 
-.login .box-user input {
+.login .box-user input, .login .box-user-cadastro input {
     width: 20vw;
     padding: 10px 20px 10px 20px;
     outline: none;
@@ -110,6 +110,18 @@ body {
     left: 0;
     color: rgb(96, 102, 153);
     font-size: 12px;
+}
+
+.login .box-user-cadastro label {
+    position: absolute;
+    color: rgb(96, 102, 153); 
+    top: -20px;
+    left: 0;
+    padding: 10px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    pointer-events: none;
+    transition: .5s;
 }
 
 .recover {
