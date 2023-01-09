@@ -66,13 +66,14 @@ span.botao-menu, span.botao-perfil {
     justify-content: space-around;
     background-color: rgb(18, 18, 71, 0.97);
     margin-left: 2em;
-    width: 15%;
-    height: 30%;
+    width: 250px;
+    height: 35vh;
     box-shadow: 6px 6px 2px rgb(96, 102, 153);
     border-radius: 7px;
     margin-top: -10em;
     position: absolute;
     left: -100vw;
+    padding: 16px 0 0 0;
     
 }
 
@@ -91,7 +92,7 @@ span.botao-menu, span.botao-perfil {
 .navegacao a:hover{
     color: rgb(96, 102, 153);
     border: 2px solid rgb(96, 102, 153);
-    padding: 15px 15px;
+    padding: 18px 10px;
     border-radius: 7px;
     margin: 0;
 }
@@ -108,14 +109,14 @@ a.links {
     align-items: flex-start;
     background-color: rgb(18, 18, 71, 0.97);
     margin-right: 2em;
-    width: 17%;
-    height: 30%;
+    width: 250px;
+    height: 35vh;
     box-shadow: -6px 6px 2px rgb(96, 102, 153);
     border-radius: 7px;
     margin-top: -10em;
     position: absolute;
     left: -100vw;
-    padding: 2em;
+    padding: 25px 10px 10px 20px ;
 }
 
 .perfil p {
