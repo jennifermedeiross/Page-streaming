@@ -63,10 +63,16 @@ body {
 .auto-login a{
     color: rgb(96, 102, 153);
     padding:  0 40px 0 40px;
+    transition: all .2s;
 }
 
 .auto-login a svg {
     cursor: pointer;
+    transition: all .2s;
+}
+
+.auto-login a:hover {
+    color: #d3d3d3;
 }
 
 .login p {
